@@ -1,10 +1,71 @@
-html,
-body {
+html {
+  --font-family-serif: "Starling","Times New Roman",serif;
+    --color-grey: #a6a6a6;
+    --color-grey-light: #eee;
+    --gutter: 30px;
+    --margin-x-small: 20px;
+    --margin-small: 40px;
+    --margin-mid: 60px;
+    --margin-large: 80px;
+    --margin-x-large: 120px;
+    --margin-xx-large: 210px;
+    --sm-gutter: 10px;
+    --sm-margin-x-small: 15px;
+    --sm-margin-small: 20px;
+    --sm-margin-mid: 30px;
+    --sm-margin-large: 70px;
+    --sm-margin-x-large: 150px;
+    --lg-font-size-large: 22px;
+    --lg-font-size-body: 18px;
+    --lg-font-size-caption: 15px;
+    --font-size-large: 19px;
+    --font-size-body: 15px;
+    --font-size-caption: 12px;
+    --md-font-size-large: 19px;
+    --md-font-size-body: 15px;
+    --md-font-size-caption: 12px;
+    --sm-font-size-large: 19px;
+    --sm-font-size-body: 14px;
+    --sm-font-size-caption: 12px;
+    --line-height-body: 1.4;
+    --header-height: 90px;
+    --sm-header-height: 45px;
+    --square-frame: calc((100vw - (var(--gutter) * 2) - var(--margin-large)) / 2);
+    --page-width: 36.8em;
+    --wide-page-width: 44.6666666em;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+/* body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+} */
+
+body {
+    font-family: Starling,Times New Roman,serif;
+    font-family: var(--font-family-serif);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-display: swap;
+    font-size: 14px;
+    font-size: var(--sm-font-size-body);
+    line-height: 1.4;
+    line-height: var(--line-height-body);
+    font-feature-settings: "onum";
+    font-variant-numeric: oldstyle-nums;
+    color: #000;
 }
+
+.site {
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: calc(45px + 15px);
+    padding-top: calc(var(--sm-header-height) + var(--sm-margin-x-small));
+}
+
 
 a {
   color: inherit;

@@ -2,11 +2,17 @@
   padding: 0 2rem;
 }
 
+.content {
+    flex: 1 0 auto;
+    padding: 0 10px;
+    padding: 0 var(--sm-gutter);
+  }
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
-  display: flex;
+  display: block;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -115,10 +121,23 @@
   margin-left: 0.5rem;
 }
 
+@media (min-width: 375px)
+body {
+    font-size: 15px;
+    font-size: var(--md-font-size-body);
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    padding: 0 30px;
+    padding: 0 var(--gutter);
   }
 }
 
