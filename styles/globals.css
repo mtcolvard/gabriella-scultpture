@@ -58,13 +58,13 @@ body {
     color: #000;
 }
 
-.site {
+/* .site {
   min-height: 100vh;
     display: flex;
     flex-direction: column;
     padding-top: calc(45px + 15px);
     padding-top: calc(var(--sm-header-height) + var(--sm-margin-x-small));
-}
+} */
 
 
 a {

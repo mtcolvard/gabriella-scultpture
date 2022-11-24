@@ -6,7 +6,13 @@
     flex: 1 0 auto;
     padding: 0 10px;
     padding: 0 var(--sm-gutter);
+    position:relative;
+
   }
+
+/* .homepageContent {
+  position:relative;
+} */
 
 .main {
   min-height: 100vh;
@@ -16,6 +22,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.site {
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: calc(45px + 15px);
+    padding-top: calc(var(--sm-header-height) + var(--sm-margin-x-small));
+}
+
+.header_title {
+  font-size: 26px;
 }
 
 .footer {
@@ -121,10 +139,14 @@
   margin-left: 0.5rem;
 }
 
-@media (min-width: 375px)
-body {
-    font-size: 15px;
-    font-size: var(--md-font-size-body);
+@media (min-width: 375px) {
+  .body {
+      font-size: 15px;
+      font-size: var(--md-font-size-body);
+  }
+  .header_title {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -138,6 +160,9 @@ body {
   .content {
     padding: 0 30px;
     padding: 0 var(--gutter);
+  }
+  .header_title__DvyTk {
+    font-size: 26px;
   }
 }
 
